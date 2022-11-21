@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block head %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/style/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    {% endblock %} 
+</style>
+<title>Programa do murilo</title>
+{% block nav%}
+<div class="container">
+  <img class ="huerotate" src="../static/public/placeholder.png" width="10%">
+  <ul class="nav nav-tabs nav-justified">
+    <li><a href="teste2.html">Home</a></li>
+    <li><a href="projetos2.html">Projeto</a></li>
+    <li><a href="contato2.html">Contatos</a></li>
+  </ul>
+  <br>  
+  {% endblock %} 
+    </div>
+  </div>  
+</head>
+<body>
+     {% block contents %}
+      <div class="divA">
+        <a href="teste2.html">
+            <img class="huerotate" src="../static/public/copa.jpg" alt="copa" height="10%" width="50%">
+          </a>
+    </div>
+    <div class="clear"></div>
+    {% endblock contents %}
+</body>
+</html>

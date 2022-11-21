@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<style type="text/css">
+/* Prova = individual e com consulta
+Criar um site de acordo com o menu1. 
+Na index terá imagem de fundo mar1.jpg.
+Mudar a cor de fundo do footer para amarelo e a cor da font para vermelho.
+Menu.
+Criar 3 páginas novas com:
+Foto de um peixe em cada página: peixe1, peixe2, peixe3, peixe4
+Plano de fundo para cada página: mar2, mar3, mar4
+Fazer comentários do index parte CSS. */
+
+body{background-image:url(mar1.jpg); /* imagem de fundo */
+	  background-attachment:fixed; /* deixa a imagem em uma posição fixa */
+      background-repeat:no-repeat; /* faz com que a imagem de fundo não repita */
+	  background-size:100%} /* faz com que 100% da imagem apareça */
+	  
+ul {
+    list-style-type:none; /* lista sem estilo */
+    margin: 0; /* sem margem */
+    padding: 0; /* o espaço entre o fim da caixa e o texto é 0 */
+	overflow: hidden; /* serve para cortar uma imagem  muito grande ou adicionar uma barra de rolamento (scroll bar, você sabe o que é professor mas é meio dificil explicar) */
+  background-color: #ddd; /* deixa a cor do fundo da lista cinza */
+    }
+
+li {
+    float:left; /* posicionar a esquerda */
+}
+
+li a {
+    display:block; /* deixa a lista no formato de bloco */
+    padding:12px; /* tamanho da caixa */
+    }
+
+a:link {
+    color: white; /* cor do link normal */
+	
+}
+
+a:visited {
+    color: green; /* cor do link ja visitado */
+}
+
+a:hover {
+    color: yellow; /* cor do link quando você coloca o mouse em cima */
+}
+
+a:active {
+    color: blue; /* cor do link enquanto você clica */
+}
+footer {
+   position:fixed; /* posição fixa pro footer */
+   left:0; /* não está indo para a esquerda */
+   bottom:0; /* deixa ele no fundo */
+   width:100%; /* largura 100% */
+   background-color:yellow; /* cor do fundo dele */
+   color:red; /* cor do texto */
+   text-align:center;} /* alinhamento do texto, nesse caso, no centro */
+   
+#p1{background-image:url(peixe1.jpg); /*coloca a imagem correta de fundo */
+	  background-repeat:no-repeat; /*não deixa repetir */
+	  width:300px; height:500px; /* configurações do tamanho e largura da foto */
+	  background-size:100% 100%} /* deixa ela em 100% */
+   
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="index.html">Peixe 1</a></li>
+  <li><a href="peixe2.html">Peixe 2</a></li>
+  <li><a href="peixe3.html">Peixe 3</a></li>
+  <li><a href="peixe4.html">Peixe 4</a></li>
+</ul>
+
+<p id="p1">NEMO!!!!!!!!</p>
+
+<footer>
+  <p>@ ETEC - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
